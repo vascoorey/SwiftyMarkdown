@@ -390,12 +390,12 @@ public class SwiftyMarkdown {
 		
 		let finalFontDescriptor = finalFont.fontDescriptor()
 		if style == .Italic {
-			let italicDescriptor = finalFontDescriptor.fontDescriptorWithSymbolicTraits(.TraitItalic)
-			finalFont = UIFont(descriptor: italicDescriptor, size: styleSize)
+            let italicDescriptor: UIFontDescriptor? = finalFontDescriptor.fontDescriptorWithSymbolicTraits(.TraitItalic)
+			finalFont = UIFont(descriptor: italicDescriptor!, size: styleSize)
 		}
 		if style == .Bold {
-			let boldDescriptor = finalFontDescriptor.fontDescriptorWithSymbolicTraits(.TraitBold)
-			finalFont = UIFont(descriptor: boldDescriptor, size: styleSize)
+            let boldDescriptor: UIFontDescriptor? = finalFontDescriptor.fontDescriptorWithSymbolicTraits(.TraitBold)
+			finalFont = UIFont(descriptor: boldDescriptor!, size: styleSize)
 		}
 		
 		
